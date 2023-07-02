@@ -9,6 +9,7 @@ export class HeroComponent {
 
   public name: string = 'hulk';
   public age: number  = 50;
+  public buttonHide: boolean = true;
 
 
   get capitalizedName(): string {
@@ -20,6 +21,7 @@ export class HeroComponent {
   }
 
   changeHero(): void {
+    this.buttonHide = false;
     this.name = 'Thor';
   }
 
