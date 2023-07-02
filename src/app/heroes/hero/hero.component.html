@@ -1,0 +1,22 @@
+<h3>{{ name }}</h3>
+
+<dl>
+  <td>Name:</td>
+  <dd>{{ name }}</dd>
+
+  <hr>
+  <td>Age:</td>
+  <dd> {{ age }} </dd>
+
+  <hr>
+  <td>Method:</td>
+  <dd> {{ getHeroDescription() }} </dd>
+
+  <hr>
+  <td>Capitalized:</td>
+  <dd> {{ capitalizedName }} </dd>
+
+</dl>
+<hr>
+<button class="btn btn-info text-white mx-2" (click)="changeHero()"> Change Name </button>
+<button class="btn btn-info text-white mx-2" (click)="changeAge()"> Change Age </button>
