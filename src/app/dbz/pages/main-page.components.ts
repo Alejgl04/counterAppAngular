@@ -31,7 +31,7 @@ export class MainPageComponent {
   }
 
   onDeleteCharacter( index: number ) {
-    this.characters.splice( index );
+    this.characters.splice( index, 1 );
   }
 
 }

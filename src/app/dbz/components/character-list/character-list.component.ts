@@ -15,9 +15,9 @@ export class CharacterListComponent {
   public onDeleteId: EventEmitter<number> = new EventEmitter();
 
   OnDeleteCharacter( index: number ): void {
-    //TODO: emit id
+
     this.onDeleteId.emit( index );
-    console.log(index);
+
   }
 
 }
